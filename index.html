@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INICIO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8a815a169a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/WebDelicius.png" class="logo" alt="logo" width="400" height="250"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="#">Galeria</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>Pasteleria delicius</h1>
+            <p>
+                Tortas y postres deliciosos para todos los gustos.
+                fragpeis, pasteles, empanadas y mucho mas.
+            </p>
+            <div>
+                <button class="btn-principal" type ="submit">INFO</button>
+                <button class="btn-secundario" type ="submit">PRODUCTOS</button>
+            </div>
+        </div>
+        <div class="flex-item2">
+            <img src="img/postresFinal.png" alt="caratula" width="500" height="400">
+        </div>
+    </section>
+    <p class="title_delicius">Tortas y bocaditos</p>
+    <main class="card-main">
+        <article class="cards">
+            <img src="img/pie-de-manzana.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Pai de manzana</h3>
+              <p>El pie de manzana es un postre que se puede degustar frío o caliente y consiste en una masa suave o crujiente rellena de manzanas, las cuales pueden ser ...</p>
+              <button>Ingresar</button>
+            </div>
+        </article>
+        <article class="cards">
+            <img src="img/torta-chocolate.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Torta de Chocolate</h3>
+              <p>Es una torta exquisita en sabor, ideal para celebraciones de cumpleaños y para todos aquellos amantes del chocolate en sí. También queda bien como postre.</p>
+              <button>Ingresar</button>
+            </div>
+        </article>
+        <article class="cards">
+            <img src="img/torta-tres-leches.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Torta de 3 leches</h3>
+              <p>Postre elaborado con un pan bañado en una salsa de leche. El pan contiene harina de trigo, azúcar, esencia de vainilla y huevo; una vez horneado y frío, se baña con ..</p>
+              <button>Ingresar</button>
+            </div>
+        </article>
+        <article class="cards">
+            <img src="img/torta-helada.jpg" alt="Sample photo">
+            <div class="text">
+              <h3>Torta Helada</h3>
+              <p>La torta helada es un clásico de la repostería peruana. Se prepara a base de gelatina, principalmente de sabor a fresa. La parte superior consta de gelatina sola...</p>
+              <button>Ingresar</button>
+            </div>
+        </article>
+    </main>
+
+    <script>
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
+    </script>
+</body>
+</html>
